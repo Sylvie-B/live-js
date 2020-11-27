@@ -56,13 +56,54 @@ console.log("result 8 vaut : " + result8 + "==> false === 0");
 console.log("result 9 vaut : " + result9 + "==> false === \"0\"");
 console.log("result 10 vaut : " + result10 + "==> false === \"false\"");
 
-// égalité === avec diff valeur
+// égalité === avec diff type de valeur
+// avec des nombres entiers
 let result11 = 1 === 1; // on compare la valeur ET le type, le résultat sera TRUE
 let result12 = 1 === 0; // on compare la valeur ET le type, le résultat sera FALSE
 let result13 = -35 === 52; // on compare la valeur ET le type, le résultat sera FALSE
 let result14 = "-35" === -35; // on compare la valeur ET le type, le résultat sera FALSE
+let result15 = "-35" === "-35"; // TRUE
+let result16 ="mon texte" === "mon texte 2"; // FALSE
+let result17 = "mon texte pour tester" === "mon texte pour tester"; // TRUE
 
-console.log("result11 vaut " + result11 + " ==> 1 === 1");
-console.log("result12 vaut " + result12 + " ==> 1 === 0");
-console.log("result13 vaut " + result13 + " ==> -35 === 52");
+console.log("result11 vaut : " + result11 + " ==> 1 === 1");
+console.log("result12 vaut : " + result12 + " ==> 1 === 0");
+console.log("result13 vaut : " + result13 + " ==> -35 === 52");
+console.log("result 14 vaut : " + result14 + " ==> \"-35\" === -35");
+console.log("result 15 vaut : " + result15 + " ==> \"-35\" === \"-35\"");
+
+// === teste l'inégalité entre 2 valeurs ET prend en compte le type de donnée
+
+console.log("demonstration avec !== ie différent");
+let result18 = 1 !== 1; // on compare la valeur ET le type, le résultat sera FALSE
+let result19 = 1 !== 0; // on compare la valeur ET le type, le résultat sera TRUE : le type est le même mais pas la valeur
+let result20 = -35 !== 52; // on compare la valeur ET le type, le résultat sera TRUE : le type est le même mais pas la valeur
+let result21 = "-35" !== -35; // on compare la valeur ET le type, le résultat sera TRUE : type différent et valeur égale
+let result22 = "-35" !== "-35"; // FALSE : type et valeur identiques
+let result23 ="mon texte" !== "mon texte 2"; // TRUE
+let result24 = "mon texte pour tester" !== "mon texte pour tester"; // FALSE
+
+console.log("result 18 vaut : " + result18 + " ==> 1 !== 1");
+console.log("result 19 vaut : " + result19 + " ==> 1 !== 0");
+console.log("result 20 vaut : " + result20 + " ==> -35 !== 52");
+console.log("result 21 vaut : " + result21 + " ==> \"-35\" !== -35");
+console.log("result 22 vaut : " + result22 + " ==> \"-35\" !== \"-35\"");
+console.log("result 23 vaut : " + result23 + " ==> 1 !== 1");
+console.log("result 24 vaut : " + result24 + " ==> !== 0");
+
+/** teste que la valeur de gauche est plus grande que la valeur de droite */
+/** on parle bien de valeur */
+console.log("OPERATEUR >");
+
+/** teste que la valeur de gauche est plus petite que la valeur de droite */
+/** on parle bien de valeur */
+console.log("OPERATEUR <");
+
+/** teste que la valeur de gauche est plus grande ou égale à la valeur de droite */
+/** on parle bien de valeur */
+console.log("OPERATEUR >=");
+
+/** teste que la valeur de gauche est plus petite ou égale à la valeur de droite */
+/** on parle bien de valeur */
+console.log("OPERATEUR <=");
 
