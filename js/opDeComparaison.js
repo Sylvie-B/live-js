@@ -93,17 +93,36 @@ console.log("result 24 vaut : " + result24 + " ==> !== 0");
 
 /** teste que la valeur de gauche est plus grande que la valeur de droite */
 /** on parle bien de valeur */
+let chaineDemo = "Hello World";
+
 console.log("OPERATEUR >");
+let result25 = 5 > 6; // sans surprise, FALSE, 5 n'est pas plus grand que 6
+let result26 = 6 > 5; // TRUE, 6 plus grand que 5
+let result27 = 6 > 6; // FALSE, car valeurs identiques
+let result28 = 6 > "hello"; // FALSE, nombre comparer à texte
+// length contient la longueur de la chaine de caractere
+let result29 = 6 > "hello".length; // TRUE
+let result30 = 6 > chaineDemo.length; // TRUE
+
+console.log("6 est-il plus grand que Hello : " + result28);
+console.log("6 est-il plus grand que la taille de la chaine de caractères Hello : " + result29);
+console.log("6 est-il plus grand que la taille de la chaine de caractères contenue dans chaineDemo : " + result30);
+
 
 /** teste que la valeur de gauche est plus petite que la valeur de droite */
 /** on parle bien de valeur */
-console.log("OPERATEUR <");
+console.log("OPERATEUR <"); //
+let result31 = 5 < 6; // TRUE
+let result32 = "HELLO WORLD".length < 10; // hello world < 10 ==> FALSE
+
 
 /** teste que la valeur de gauche est plus grande ou égale à la valeur de droite */
 /** on parle bien de valeur */
 console.log("OPERATEUR >=");
+let result33 = 6 >= 6; // TRUE
 
 /** teste que la valeur de gauche est plus petite ou égale à la valeur de droite */
 /** on parle bien de valeur */
 console.log("OPERATEUR <=");
-
+let result34 = "on verra plus tard".length <= 20; //  TRUE result34=18
+console.log(result34)
