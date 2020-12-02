@@ -61,3 +61,51 @@ else {
     console.log(nbr2 + "n'est pas multiple de " + multi + "car après division il reste" + (nbr2 % multi));
 }
 
+/** les operateurs d'affectation
+ * voir ça comme des raccourcis
+ */
+
+// addition et affectation
+let driveMyCar = 10;
+let itBe = 1;
+// itBe = itBe + driveMyCar; // itBe vaut 11
+itBe += driveMyCar; // genre de raccourci, fait exactement le même que le code en commentaire de la ligne précédente
+
+console.log(itBe)
+
+// soustraction et affectation
+let comeTogether = 10;
+let heyJude = 0;
+// heyJude = heyJude - comeTogether; // heyJude vaut -10
+heyJude -= comeTogether;
+
+// multiplication et affectation
+let allMyLoving = 20;
+let askMeWhy = 1;
+askMeWhy = askMeWhy * allMyLoving;
+askMeWhy *= allMyLoving;
+
+// division et affectation
+let imagine = 5;
+let anyTimeAtAll = 2;
+// anyTimeAtAll = anyTimeAtAll / imagine;
+anyTimeAtAll /= imagine
+
+// modulo et affectation
+let chains = 60;
+let dontLetMeDown = 3;
+dontLetMeDown = dontLetMeDown % chains;
+dontLetMeDown %= chains;
+
+/** la concatenation
+ * = coller deux chaines de caracrteres
+ */
+
+ let ch1 = "Hello ";
+ let ch2 = "world";
+ let ch3 = " how are you ?"
+
+let concat = "decembre " + ch1 + ch2 + ch3;
+ let concat2 = `december: ${ch1} ${ch2} ${ch3}`;
+ console.log(concat);
+ console.log(concat2);
