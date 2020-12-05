@@ -3,14 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>formulaire</title>
+    <style>
+
+        label, input, select{
+            display: block;
+        }
+    </style>
+
+
 
 </head>
 <body>
 
-    <form action="">
-        <label for=""></label>
-        <input type="text">
+    <form action="#">
+        <label for="nom">Nom</label>
+        <input type="text" placeholder="votre nom" id="nom">
+
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom">
+
+        <label for="password">Pass Word</label>
+        <input type="text" id="password">
+
+        <input type="submit" value="envoyer" id="envoyer">
+<!--         text area -->
+        <label for="area">ton txt</label>
+        <textarea name="area" id="area" cols="30" rows="10"></textarea>
+        <span id="max"></span>
     </form>
+    <select name="select" id="select">
+        <option value="val 1">val 1</option>
+        <option value="val 2">val 2</option>
+        <option value="val 3">val 3</option>
+        <option value="val 4">val 4</option>
+        <option value="val 5">val 5</option>
+    </select>
 
 <script src="js/appForm.js"></script>
 </body>
